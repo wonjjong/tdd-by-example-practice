@@ -16,4 +16,11 @@ public class Main {
         assertTrue(new Dollar(5).equals(new Dollar(5)));
         assertFalse(new Dollar(5).equals(new Dollar(6)));
     }
+
+    @Test
+    void testFrancMultiplication() {
+        Franc five =  new Franc(5);
+        assertEquals(new Franc(10), five.time(2));
+        assertEquals(new Franc(15), five.time(3));
+    }
 }
